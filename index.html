@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GambalongaDev</title>
+
+    <meta name="description" content="Portofolio Gambalongadev full stack en busqueda de empleo"> <!-- SEO-->
+ 
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Portofolio GambalongaDev">
+    <meta property="og:description" content="Esta es la description del portfolio">
+    <meta property="og:image" content="./imagenes/Captura de pantalla 2023-05-18 192856.png">
+    <meta property="og:image:alt" content="Fotografia Raul cv">
+ 
+    <meta name="robots" content="index, follow"> <!-- SEO-->
+    <meta name="theme-color" content="#09f">
+
+    <!-- SEO-->
+    <link rel="alternate" href="https://midu.dev/en" hreflang="en-GB">
+    <link rel="canonical" href="https://midu.dev">
+
+    <link rel="icon" type="image/jpg" href="./imagenes/Captura de pantalla 2023-05-18 192856.png">
+
+    <style>
+        /* 
+        selector {
+            propiedad: valor;  <-- DECLARACION
+        }
+        */
+
+        h1 {
+            /* color:rgba(red, green, blue, alpha); */
+            /* color:rgb(red, green, blue / 50%) /* MODERNO */
+            /* color:hsl(hue, saturation, lightness); */
+            /* color:oklch(lightness chroma hue); */
+            color: blue ;
+            border-width: 3px;
+            border-style: solid;
+            border-color: currentColor;
+        }
+        body {
+            background: hsl(350, 100%, 88%);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        /* Clases */
+        .link {
+            color: red;
+        }
+        /*  Pseudo clases
+            hover, active,focus,etc
+        */
+        .link:hover {
+           /* border: 3px solid red; */
+            /* Con outline no da salto */
+           outline: 10px solid red;
+        }
+
+        .link:active {
+            outline: 10px solid blue ;
+        }
+
+        .link:focus {
+            border: 1px solid yellow;
+        }
+
+        #show {
+            background: #09f;
+            color: white;
+            border: 0;
+        }
+
+        .description {
+            border: 1px solid red;
+        }
+        /* Pseudo - clase FirstChild/ lastChild */
+
+        li:first-child {
+            color: rgb(75, 11, 236);
+        }
+        li:last-child {
+            color: rgb(236, 105, 11);
+        }
+
+        /* OPERADORES CON SELECTORES
+            1.> article < p (en este ejemplo solo se aplica a los hijos
+            directos del article)
+            2. > p ~ span (aplica a todos los span que esten despues de la p)
+            3. > p + span (aplica solo al elemnto que va justo despues)
+        */
+     
+    </style>
+
+
+    </head>
+    <body>
+    <header>
+        <h1> Portofolio de Raúl Gambalonga</h1>
+
+        <!-- <iframe style="width: 100%; aspect-ratio: 16/9;"  src="https://www.youtube.com/embed/hrxjBqZWsb0?si=uvstTV7fC6u5hCbA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe> -->
+
+        <nav>
+            <!-- Enlaces Internos-->
+            <a class="link" href="#experiencia"> Experiencia </a>
+            <a class="link" href="#proyectos"> Proyectos </a>
+            
+            <!-- Enlaces Internos-->
+            <a 
+            class="link"
+            href="https://twitch.tv/midudev"
+            target="_blanck"
+            rel="noreferrer">
+                twitch.tv/midudev 
+        </a>
+
+        </nav>
+    </header>
+
+    <video src=""></video>
+
+    <!-- <dialog id="dialog">
+        <h1> ¿sabías que puedes abrir una modal así?</h1>
+        <p> Y es totalmente nativo</p>
+        <button id="hide"> Cerrar modal</button>
+    </dialog>
+
+    <button id="show">Ver más Información </button>
+
+    <script>
+        window.show,addEventListener('click', () => {
+            window.dialog.showModal()
+        })
+
+        window.hide.addEventListener('click', () =>  {
+            window.dialog.close()
+        })
+    </script> -->
+    <dialog id="dialog">
+        <h1>¿Sabías que puedes abrir una modal así?</h1>
+        <p>¡Y es totalmente nativo!</p>
+        <button id="hide">Cerrar modal</button>
+    </dialog>
+    
+    <button id="show">Ver más información</button>
+    
+    <script>
+        window.show.addEventListener('click', () => {
+            window.dialog.showModal()
+        })
+
+        window.hide.addEventListener('click', () => {
+            window.dialog.close()
+        })
+    </script>
+
+    <main>
+
+        
+        <p class="description"> 
+            Desarrolador Full Stack más enfocado al <strong> Front </strong>
+        </p>
+        
+        <h2 id="experiencia" > Experiencia</h2>
+        
+        <ul>
+            <li class="List-item"> Cocampo 2023 </li>
+
+            <li class="List-item"> Auriga 2022 </li>
+        </ul>
+
+        <a download href="./imagenes/Captura de pantalla 2023-05-18 192856.png" >
+
+            <img 
+            id="photo-image"
+            src="./imagenes/Captura de pantalla 2023-05-18 192856.png"
+            title="Fotografía" 
+            alt="foto Raúl"
+            height="300"
+            width="300"
+            >
+        </a>
+            
+        <h2 id="proyectos" > Proyectos realizados : </h2>
+        
+        <aside>
+            <header>
+                <h3> Mis tecnologías favoritas </h3>
+        </header>
+        <ol>
+            <li> HTML</li>
+            <li> CSS</li>
+            <li> JavaScript</li>
+            <li> Node.js</li>
+        </ol>
+    </aside>
+
+    <button>
+        Haz click aquí
+    </button>
+    
+    <section>
+        <article>
+            <header>
+                <h4> Sitio Web Corporativo</h4>
+            </header>
+            <img width="100%; aspect-ratio:301/169;" loading="lazy" src="./imagenes/nuevos-tesla-2021-2113099.webp" alt="">
+            <p> Desarrolo de un stio web Corporativo con una interfaz amigable y moderna</p>
+            <footer>
+                <small> tecnologías utilizadas: HTML, CSS, JavaScript </small>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h4> Sitio Web Corporativo</h4>
+            </header>
+            <p> Desarrolo de un stio web Corporativo con una interfaz amigable y moderna</p>
+            <footer>
+                <small> tecnologías utilizadas: HTML, CSS, JavaScript </small>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h4> Sitio Web Corporativo</h4>
+            </header>
+            <p> Desarrolo de un stio web Corporativo con una interfaz amigable y moderna</p>
+            <footer>
+                <small> tecnologías utilizadas: HTML, CSS, JavaScript </small>
+            </footer>
+        </article>
+        
+    </section>
+
+    <section>
+        <h2> Preguntas Frecuentes </h2>
+        <details open>
+            <summary>¿Qué estudios tienes?</summary>
+            <p> Estudié en la universidad de Vilanova una Ingeniería de
+            Informática durante 5 años </p>
+        </details>
+        <details>
+            <summary>¿Cuáles son tus hobbies ?</summary>
+            <p>Me gusta mucho el deporte, sobre todo el fútbol y el baloncesto </p>
+        </details>
+        <details>
+            <summary>¿Cuál es tu lenguaje favorito ?</summary>
+            <p>Me encanta JavaScript, es un lenguajemuy versátil y con 
+            el que se pueden hacer muchas cosas </p>
+        </details>
+    </section>
+
+    <section>
+        <h2> Formulario de contacto </h2>
+
+        <form method="post" action="/">
+            <fieldset>
+                <legend> Información personal </legend>
+
+                <label style="display: block;"> Nombre:
+                    <input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Nombre"
+                    required
+                    >
+                </label>
+                <label style="display: block;"> Email:
+                    <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="example@gmail.com"
+                    required
+                    >
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Informacíon Adicional </legend>
+                <div>
+                    <label>Teléfono:
+                        <input 
+                        type="tel" 
+                        name="phone" 
+                        placeholder="phone"
+                        required
+                        >
+                    
+                    </label>
+                </div>    
+            </fieldset>
+
+            <fieldset>
+                <legend>Otros</legend>
+                  <div>
+
+                      <label for="why"> ¿Por qué quieres contactar?</label>
+                      <select name="why" id="why">
+                          <option value="1"> Trabajo </option>
+                          <option value="2"> Duda </option>
+                          <option value="3"> Más Información </option>
+                        </select>
+                    </div>  
+
+                    <div>
+                        <label for="terms">¿Acpetas los términos? </label>
+                        <input type="checkbox" name="terms" id="terms" required>
+                    </div>
+
+                    <div>
+                        <datalist id="languages">
+                            <option value="JavaScript"></option>
+                            <option value="Python"></option>
+                            <option value="java"></option>
+                            <option value="C#"></option>
+                            <input type="text">
+                        </datalist>
+                        <label>
+                            ¿ Con qué lenguaje quieres que te ayude?
+                            <input list="languages" name="languages">
+                        </label>
+                    </div>
+            </fieldset>
+
+            <button> Enviar contacto </button>
+        </form>
+    </section>
+    
+    </main>
+
+    <footer>
+        Copyrigth © 2023 - El portfolio más bello del mundo
+
+        <a href="mailto:gambalongadev@gmail.com"> Envíame un correo </a>
+        <a href="tel:34 623067325"> LLamar por teléfono </a>
+        <a href="whatsapp://send?text=Nuestro mensaje predeterminado"> whatsapp</a>
+    </footer>
+    </body>
+</html>
